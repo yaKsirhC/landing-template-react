@@ -1,0 +1,40 @@
+footer {
+	display: flex;
+	// background-color: #fff;
+	padding: 20px;
+	flex-wrap: wrap;
+	
+	.logo {
+		color: #ffffff;
+		
+		svg {
+			height: 40px;
+			vertical-align: middle;
+			margin-right: 20px;
+			width: auto;
+		}
+	}
+	
+	.footer-nav {
+		flex-wrap: wrap;
+		color: #ffffff;
+		display: flex;
+		flex-grow: 1;
+		justify-content: space-evenly;
+		.navs {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			
+			a {
+				color: inherit;
+
+			}
+			
+		}
+
+		& > div h1 {
+			margin-bottom: 20px;
+		}
+	}
+}

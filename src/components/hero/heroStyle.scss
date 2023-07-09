@@ -1,0 +1,55 @@
+@import '../../variables.scss';
+
+.hero-container {
+	// padding: 0 20px;
+	padding-top: 20px;
+
+	.waves {
+		// object-fit: contain;
+		// screw images, imma place the svg directly, good idea
+		// bad idea
+		width: 100%;
+		height: auto;
+		transform: translateY(5px);
+	}
+
+	.hero {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 20px;
+		flex-wrap: wrap-reverse;
+	}
+
+	.hero-img {
+		width: 40vw;
+		min-width: 322px;
+		max-width: 620px;
+	}
+
+	.text {
+		min-width: 268;
+		color: #fff;
+		h1, h2, p {
+			max-width: 40ch;
+		}
+		h1 {
+			font-weight: bold;
+			font-size: 2rem;
+		}
+
+		h2 {
+			margin-bottom: 20px;
+		}
+
+		button {
+			padding: 10px;
+			border-radius: 24px;
+			cursor: pointer;
+			box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.149) ;
+		}
+		
+	}
+}//yo
+// bro, what is useffect here?
+// ok, createeffect

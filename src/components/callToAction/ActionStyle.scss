@@ -1,0 +1,60 @@
+.wave-top {
+    width: 100%;
+    height: auto;
+}
+.action {
+
+	// padding: 0px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	overflow: hidden;
+
+	.action-text{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+        margin-bottom: 7rem;
+
+		h1 {
+			text-align: center;
+			font-size: 2.5rem;
+            color: white;
+            padding: 10px;
+		}
+		
+		hr {
+			transform: translateZ(90deg);
+			height: 4px;
+			width: 13%;
+			background: linear-gradient(90deg,#ffffff,#ffffff);
+			opacity: .25;
+		} 
+        h2 {
+            color: white;
+            padding: 20px;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+        button {
+            padding: 20px 30px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+		
+	}
+}
+// k, now?
+// yeah, nice, but we need to do some minor fixes, especially the plans.
+// also the hamburger
+// damre screwed
+// lo
+// okt  / also,orgofed..em
+// lol, u gud with em? u can do the animations
+// im good with rem, not em
+// ok, u do animations i do other things
+// where animations
+// see the website og for the animations on scroll, go to about.scss, this section has the method
+// of animation

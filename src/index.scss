@@ -1,6 +1,23 @@
-body {
+@import 'variables.scss';
+
+.app {
+	background: $lin-gradient;
+}
+
+*, *::after,::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: SourceSansPro,sans-serif;
+    font-size: 1.1rem;
+}
+
+body, html {
     background-color: black;
-    div {
-        background-color: #fff;
-    }
+    // div {
+    //     background-color: #fff;
+    // }
 }

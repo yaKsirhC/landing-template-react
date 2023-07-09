@@ -1,0 +1,104 @@
+.about {
+	background-color: #fff;
+	padding: 40px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	overflow: hidden;
+
+	.about-text{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		h1 {
+			text-align: center;
+			font-size: 2rem;
+		}
+		
+		hr {
+			transform: translateZ(90deg);
+			height: 4px;
+			width: 20%;
+			background: linear-gradient(90deg,#d53369,#daae51);
+			opacity: .5;
+		}
+		
+	}
+	
+	.item {
+		display: flex;
+		justify-content: center;
+		gap: 50px;
+		transform: translateY(100px) translateX(100px);
+		opacity: 0;
+		
+		img {
+			width: 40vw;
+			height: auto;
+			min-width: 271px;
+		}
+		
+		.text {
+			align-self: center;
+			
+			h2 {
+				font-size: 1.5rem;
+			}
+			p {
+				max-width: 40ch;
+			}
+		}
+	}
+	.reverse{
+		transform: translateY(100px) translateX(-100px);
+		flex-direction: row-reverse;
+	}
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+	.normal {
+	  animation-name: enter;
+	  animation-duration: 3s;
+	  animation-fill-mode: forwards;
+	}
+	.reverse {
+	  animation-name: enter-reverse;
+	  animation-duration: 3s;
+	  animation-fill-mode: forwards;
+	}
+}
+@keyframes enter {
+	0% {
+		transform: translateY(100px) translateX(100px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes enter-reverse {
+	0% {
+		transform: translateY(100px) translateX(-100px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+	
+}
+
+
+@media screen and (max-width: 730px) {
+	.about{
+		gap: 200px !important;
+	}
+	.item {
+		flex-direction: column !important;
+		align-items: center !important;
+	}
+}
